@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SpaceInvaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroung" translatesAutoresizingMaskIntoConstraints="NO" id="9XV-66-uHQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Invaders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGw-Bc-G2f">
+                                <rect key="frame" x="55.5" y="145" width="303" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="FMC-vH-g6P"/>
+                                    <constraint firstAttribute="width" constant="303" id="JvY-iE-h6m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" red="0.14117647058823529" green="0.38431372549019605" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sn4-qc-UWt" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="115" y="366" width="185" height="74"/>
+                                <color key="backgroundColor" red="0.14269234660666175" green="0.38546021324836505" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="QyC-8p-agk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Играть">
+                                    <color key="titleColor" red="0.19215686274509802" green="0.12156862745098039" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19215686274509802" green="0.12156862745098039" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showPlayViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDZ-CV-rHV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjS-gX-LAk" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="115" y="467" width="185" height="74"/>
+                                <color key="backgroundColor" red="0.14269234659999999" green="0.38546021320000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="185" id="dRp-1F-bTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Инструкция">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.1215686275" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19215686269999999" green="0.1215686275" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showTutorialViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="URQ-UN-LGe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wjS-gX-LAk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0oU-Dn-rAl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9XV-66-uHQ" secondAttribute="bottom" id="1Gd-Di-Xfy"/>
+                            <constraint firstItem="sn4-qc-UWt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Eb4-TF-RRh"/>
+                            <constraint firstItem="iGw-Bc-G2f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Fi5-xK-3LE"/>
+                            <constraint firstItem="9XV-66-uHQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Jvm-nx-If0"/>
+                            <constraint firstItem="wjS-gX-LAk" firstAttribute="top" secondItem="sn4-qc-UWt" secondAttribute="bottom" constant="27" id="ZkS-rV-wKh"/>
+                            <constraint firstItem="iGw-Bc-G2f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="ckS-AC-512"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9XV-66-uHQ" secondAttribute="trailing" id="dWx-jk-H8D"/>
+                            <constraint firstItem="9XV-66-uHQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hJh-EG-XSk"/>
+                            <constraint firstItem="sn4-qc-UWt" firstAttribute="top" secondItem="iGw-Bc-G2f" secondAttribute="bottom" constant="103" id="i9i-UG-HXP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336.23188405797106" y="87.723214285714278"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="siq-eg-vnD">
+            <objects>
+                <viewController storyboardIdentifier="TutorialViewController" id="mh1-S2-HOs" customClass="TutorialViewController" customModule="SpaceInvaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gyQ-ZW-3Nv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroung" translatesAutoresizingMaskIntoConstraints="NO" id="fRC-jX-1RZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Инструкция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtf-cw-jm1">
+                                <rect key="frame" x="80.5" y="189" width="253" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="fYk-yY-JRb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
+                                <color key="textColor" red="0.14117647058823529" green="0.38431372549019605" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOY-UN-VpH" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="114.5" y="758" width="185" height="74"/>
+                                <color key="backgroundColor" red="0.14269234659999999" green="0.38546021320000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="60D-97-PCn"/>
+                                    <constraint firstAttribute="width" constant="185" id="mAr-EQ-gNU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal" title="Закрыть">
+                                    <color key="titleColor" red="0.19215686269999999" green="0.1215686275" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.19215686269999999" green="0.1215686275" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="34"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R2X-6v-vEL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wtf-cw-jm1" firstAttribute="top" secondItem="R2X-6v-vEL" secondAttribute="top" constant="145" id="DeG-if-I82"/>
+                            <constraint firstItem="R2X-6v-vEL" firstAttribute="bottom" secondItem="fRC-jX-1RZ" secondAttribute="bottom" id="WhT-UY-4ne"/>
+                            <constraint firstItem="R2X-6v-vEL" firstAttribute="trailing" secondItem="fRC-jX-1RZ" secondAttribute="trailing" id="a5Z-cy-QlX"/>
+                            <constraint firstItem="fRC-jX-1RZ" firstAttribute="leading" secondItem="R2X-6v-vEL" secondAttribute="leading" id="c2e-XA-hn1"/>
+                            <constraint firstItem="AOY-UN-VpH" firstAttribute="centerX" secondItem="R2X-6v-vEL" secondAttribute="centerX" id="ckf-F3-5dG"/>
+                            <constraint firstItem="fRC-jX-1RZ" firstAttribute="top" secondItem="R2X-6v-vEL" secondAttribute="top" id="ifK-J3-yHs"/>
+                            <constraint firstItem="R2X-6v-vEL" firstAttribute="bottom" secondItem="AOY-UN-VpH" secondAttribute="bottom" constant="30" id="pKQ-5e-Yi0"/>
+                            <constraint firstItem="Wtf-cw-jm1" firstAttribute="centerX" secondItem="R2X-6v-vEL" secondAttribute="centerX" id="pRM-2t-Nux"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kbU-wE-uZP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7X-nX-xdf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786.95652173913049" y="348.88392857142856"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="nnu-aY-2ff">
+            <objects>
+                <viewController storyboardIdentifier="PlayViewController" id="UF4-wJ-6jg" customClass="PlayViewController" customModule="SpaceInvaders" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q7q-b3-DXy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-90-GF5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="37"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroung" translatesAutoresizingMaskIntoConstraints="NO" id="Fqw-nd-Hcx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Очки:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geM-UR-uwp">
+                                        <rect key="frame" x="8" y="8" width="62" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.14117647058823529" green="0.38431372549019605" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-cb-A11">
+                                        <rect key="frame" x="78" y="8" width="15" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" red="0.14117647059999999" green="0.38431372549999998" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="DeY-DI-FEU"/>
+                                    <constraint firstAttribute="width" constant="414" id="asj-5e-Zjl"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroung" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-3h-pP2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qKJ-ih-AZp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qKJ-ih-AZp" firstAttribute="bottom" secondItem="AN9-3h-pP2" secondAttribute="bottom" id="BVq-R7-DY6"/>
+                            <constraint firstItem="6Ku-90-GF5" firstAttribute="centerX" secondItem="qKJ-ih-AZp" secondAttribute="centerX" id="D5e-Dz-cp0"/>
+                            <constraint firstItem="AN9-3h-pP2" firstAttribute="leading" secondItem="qKJ-ih-AZp" secondAttribute="leading" id="KE1-SX-SNS"/>
+                            <constraint firstItem="AN9-3h-pP2" firstAttribute="top" secondItem="qKJ-ih-AZp" secondAttribute="top" id="ads-Xa-hpo"/>
+                            <constraint firstItem="6Ku-90-GF5" firstAttribute="top" secondItem="qKJ-ih-AZp" secondAttribute="top" id="baf-fp-dIZ"/>
+                            <constraint firstItem="qKJ-ih-AZp" firstAttribute="trailing" secondItem="AN9-3h-pP2" secondAttribute="trailing" id="wCv-o0-x58"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NCR-Yh-cOn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CdY-eK-N9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.91304347826087" y="-356.25"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="AOY-UN-VpH">
+            <size key="intrinsicContentSize" width="118" height="46"/>
+        </designable>
+        <designable name="sn4-qc-UWt">
+            <size key="intrinsicContentSize" width="96" height="46"/>
+        </designable>
+        <designable name="wjS-gX-LAk">
+            <size key="intrinsicContentSize" width="167" height="46"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="backgroung" width="1550" height="870"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
