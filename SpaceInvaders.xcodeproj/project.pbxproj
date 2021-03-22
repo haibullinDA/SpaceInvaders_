@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF467DDB26089C6D007D4581 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF467DDA26089C6D007D4581 /* TutorialViewController.swift */; };
+		CF467DDE2608AAA6007D4581 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF467DDD2608AAA6007D4581 /* GameViewController.swift */; };
+		CF467DE62608B951007D4581 /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF467DE52608B951007D4581 /* Invader.swift */; };
 		CF6F1472260492DE00D12389 /* UICustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F1471260492DE00D12389 /* UICustomButton.swift */; };
 		CF9A70462601FFB1004003F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9A70452601FFB1004003F4 /* AppDelegate.swift */; };
 		CF9A70482601FFB1004003F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9A70472601FFB1004003F4 /* SceneDelegate.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CF467DDA26089C6D007D4581 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		CF467DDD2608AAA6007D4581 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CF467DE52608B951007D4581 /* Invader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
 		CF6F1471260492DE00D12389 /* UICustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomButton.swift; sourceTree = "<group>"; };
 		CF9A70422601FFB1004003F4 /* SpaceInvaders.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceInvaders.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9A70452601FFB1004003F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF467DE12608B27E007D4581 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF9A70492601FFB1004003F4 /* ViewController.swift */,
+				CF467DDD2608AAA6007D4581 /* GameViewController.swift */,
+				CF467DDA26089C6D007D4581 /* TutorialViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CF467DE22608B29A007D4581 /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F1471260492DE00D12389 /* UICustomButton.swift */,
+			);
+			path = CustomObjects;
+			sourceTree = "<group>";
+		};
+		CF467DE42608B90E007D4581 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CF467DE52608B951007D4581 /* Invader.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		CF9A70392601FFB0004003F4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +90,15 @@
 		CF9A70442601FFB1004003F4 /* SpaceInvaders */ = {
 			isa = PBXGroup;
 			children = (
+				CF467DE42608B90E007D4581 /* Model */,
+				CF467DE22608B29A007D4581 /* CustomObjects */,
 				CF9A70452601FFB1004003F4 /* AppDelegate.swift */,
 				CF9A70472601FFB1004003F4 /* SceneDelegate.swift */,
-				CF9A70492601FFB1004003F4 /* ViewController.swift */,
+				CF467DE12608B27E007D4581 /* ViewControllers */,
 				CF9A704B2601FFB1004003F4 /* Main.storyboard */,
 				CF9A704E2601FFC4004003F4 /* Assets.xcassets */,
 				CF9A70502601FFC4004003F4 /* LaunchScreen.storyboard */,
 				CF9A70532601FFC4004003F4 /* Info.plist */,
-				CF6F1471260492DE00D12389 /* UICustomButton.swift */,
 			);
 			path = SpaceInvaders;
 			sourceTree = "<group>";
@@ -142,7 +175,10 @@
 			files = (
 				CF6F1472260492DE00D12389 /* UICustomButton.swift in Sources */,
 				CF9A704A2601FFB1004003F4 /* ViewController.swift in Sources */,
+				CF467DE62608B951007D4581 /* Invader.swift in Sources */,
+				CF467DDB26089C6D007D4581 /* TutorialViewController.swift in Sources */,
 				CF9A70462601FFB1004003F4 /* AppDelegate.swift in Sources */,
+				CF467DDE2608AAA6007D4581 /* GameViewController.swift in Sources */,
 				CF9A70482601FFB1004003F4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8R67UCKH4;
 				INFOPLIST_FILE = SpaceInvaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TSU.SpaceInvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8R67UCKH4;
 				INFOPLIST_FILE = SpaceInvaders/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -317,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TSU.SpaceInvaders;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
