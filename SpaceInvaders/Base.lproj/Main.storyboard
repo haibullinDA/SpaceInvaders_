@@ -138,26 +138,126 @@
                                     <constraint firstAttribute="height" constant="36.5" id="g1C-CC-NFp"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tsd-0q-909" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="20" y="792" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.022112006319999999" green="0.35937732459999999" blue="0.80041635040000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Left"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lH-zf-IcD" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="324" y="792" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.34618505840000002" blue="0.81257289649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Fire"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxZ-ec-pYa" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="107" y="792" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.34618505840000002" blue="0.81257289649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Right"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="35"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="linkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Defeat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZz-eD-6je">
+                                <rect key="frame" x="124.5" y="406.5" width="165" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="ASz-dm-GjO"/>
+                                    <constraint firstAttribute="width" constant="165" id="XiV-sH-FBi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="58"/>
+                                <color key="textColor" red="0.0" green="0.34618505840000002" blue="0.81257289649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATM-tg-eQJ" customClass="UICustomButton" customModule="SpaceInvaders" customModuleProvider="target">
+                                <rect key="frame" x="153" y="533" width="108" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="В меню">
+                                    <color key="titleColor" red="0.0" green="0.34618505840000002" blue="0.81257289649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.0" green="0.34618505840000002" blue="0.81257289649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="vfb-Fp-Zr1" kind="unwind" identifier="backToMainMenuTwo" unwindAction="unwindSegueToMainMenuTwoWithSegue:" id="gOG-Gr-jRP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xSd-f6-2eU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="yxZ-ec-pYa" firstAttribute="leading" secondItem="Tsd-0q-909" secondAttribute="trailing" constant="17" id="1fg-TW-1Fc"/>
                             <constraint firstAttribute="bottom" secondItem="XBH-JJ-btq" secondAttribute="bottom" id="3wQ-ai-eUv"/>
+                            <constraint firstItem="xSd-f6-2eU" firstAttribute="bottom" secondItem="0lH-zf-IcD" secondAttribute="bottom" id="CZ5-C7-zyK"/>
+                            <constraint firstItem="KZz-eD-6je" firstAttribute="centerX" secondItem="xSd-f6-2eU" secondAttribute="centerX" id="Fax-EO-2K4"/>
+                            <constraint firstItem="0lH-zf-IcD" firstAttribute="height" secondItem="c3E-7o-7Tr" secondAttribute="height" multiplier="0.078125" id="GLZ-tr-ufm"/>
                             <constraint firstItem="taK-yq-kVt" firstAttribute="leading" secondItem="xSd-f6-2eU" secondAttribute="leading" constant="20" id="OTv-Mv-fzt"/>
+                            <constraint firstItem="xSd-f6-2eU" firstAttribute="bottom" secondItem="yxZ-ec-pYa" secondAttribute="bottom" id="RSJ-Z9-JXp"/>
                             <constraint firstItem="XBH-JJ-btq" firstAttribute="trailing" secondItem="xSd-f6-2eU" secondAttribute="trailing" id="RVh-cC-Y0G"/>
+                            <constraint firstItem="Tsd-0q-909" firstAttribute="width" secondItem="c3E-7o-7Tr" secondAttribute="width" multiplier="0.169082" id="TfY-5s-JUA"/>
+                            <constraint firstItem="xSd-f6-2eU" firstAttribute="trailing" secondItem="0lH-zf-IcD" secondAttribute="trailing" constant="20" id="Wka-pd-Vjl"/>
+                            <constraint firstItem="Tsd-0q-909" firstAttribute="leading" secondItem="xSd-f6-2eU" secondAttribute="leading" constant="20" id="Z78-Nl-Tal"/>
+                            <constraint firstItem="yxZ-ec-pYa" firstAttribute="width" secondItem="c3E-7o-7Tr" secondAttribute="width" multiplier="0.169082" id="d6i-LU-dhG"/>
                             <constraint firstItem="taK-yq-kVt" firstAttribute="top" secondItem="xSd-f6-2eU" secondAttribute="top" id="eLA-b3-jXE"/>
+                            <constraint firstItem="0lH-zf-IcD" firstAttribute="width" secondItem="c3E-7o-7Tr" secondAttribute="width" multiplier="0.169082" id="gAU-c9-HF1"/>
+                            <constraint firstItem="yxZ-ec-pYa" firstAttribute="height" secondItem="c3E-7o-7Tr" secondAttribute="height" multiplier="0.078125" id="ipS-3B-OeG"/>
                             <constraint firstItem="XBH-JJ-btq" firstAttribute="leading" secondItem="xSd-f6-2eU" secondAttribute="leading" id="kYJ-Xw-etB"/>
+                            <constraint firstItem="xSd-f6-2eU" firstAttribute="bottom" secondItem="Tsd-0q-909" secondAttribute="bottom" id="r72-pp-Dkm"/>
+                            <constraint firstItem="Tsd-0q-909" firstAttribute="height" secondItem="c3E-7o-7Tr" secondAttribute="height" multiplier="0.078125" id="rmg-WS-h9O"/>
+                            <constraint firstItem="KZz-eD-6je" firstAttribute="centerY" secondItem="xSd-f6-2eU" secondAttribute="centerY" id="src-Q3-6hJ"/>
                             <constraint firstItem="XBH-JJ-btq" firstAttribute="top" secondItem="c3E-7o-7Tr" secondAttribute="top" id="yf4-u4-3Ud"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZSp-ue-hvd"/>
                     <connections>
+                        <outlet property="backToMenuButton" destination="ATM-tg-eQJ" id="vyx-sy-kst"/>
+                        <outlet property="labelDefeat" destination="KZz-eD-6je" id="ktA-xX-4Il"/>
+                        <outlet property="leftMoveButton" destination="Tsd-0q-909" id="Hue-ZT-1jj"/>
+                        <outlet property="rightMoveButton" destination="yxZ-ec-pYa" id="8iL-A7-bcF"/>
                         <outlet property="scoreLabel" destination="5bC-8Y-uhQ" id="2dB-sC-wQh"/>
+                        <outlet property="shootButton" destination="0lH-zf-IcD" id="f49-3G-jXW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmc-QN-l8c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vfb-Fp-Zr1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="-312"/>
+            <point key="canvasLocation" x="-39.130434782608695" y="-312.05357142857139"/>
         </scene>
         <!--Tutorial View Controller-->
         <scene sceneID="ZBr-BF-e2I">
@@ -177,7 +277,7 @@
                                 <color key="textColor" red="0.071061126890000006" green="0.36884585019999999" blue="0.77628570799999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Управляйте пушкой и сбивайте пришельцев. Уворачивайтесь от вражеских снарядов. Вы проиграете если пришельцы доберуться до низа." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-nd-7v7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Управляйте пушкой и сбивайте пришельцев. Вы проиграете если пришельцы доберуться до низа." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-nd-7v7">
                                 <rect key="frame" x="20" y="333" width="374" height="344"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="344" id="fRx-Ud-tAa"/>
@@ -233,6 +333,15 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="0lH-zf-IcD">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="ATM-tg-eQJ">
+            <size key="intrinsicContentSize" width="88" height="54"/>
+        </designable>
+        <designable name="Tsd-0q-909">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
         <designable name="Xn3-r3-lwd">
             <size key="intrinsicContentSize" width="84" height="57"/>
         </designable>
@@ -242,9 +351,15 @@
         <designable name="wjS-gX-LAk">
             <size key="intrinsicContentSize" width="151" height="57"/>
         </designable>
+        <designable name="yxZ-ec-pYa">
+            <size key="intrinsicContentSize" width="36" height="30"/>
+        </designable>
     </designables>
     <resources>
         <image name="backgroung" width="1550" height="870"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
